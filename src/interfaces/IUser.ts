@@ -20,4 +20,4 @@ export default interface IUser {
     catchPhrase: string;
     bs: string;
   };
-};
+}

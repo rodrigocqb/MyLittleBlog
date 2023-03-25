@@ -4,4 +4,4 @@ export default interface IComment {
   name: string;
   email: string;
   body: string;
-};
+}
