@@ -61,7 +61,7 @@ table {
   html,
   body {
     height: var(--doc-height);
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   #root {
     height: var(--doc-height);
