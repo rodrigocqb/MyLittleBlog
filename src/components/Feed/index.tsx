@@ -24,8 +24,9 @@ export default function Feed() {
 }
 
 const Container = styled.div`
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 611px;
   row-gap: 16px;
 `;
