@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import Feed from "../components/Feed";
+import UserList from "../components/UserList";
 
 export default function Home() {
   return (
     <Container>
       <Feed />
+      <UserList />
     </Container>
   );
 }

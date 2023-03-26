@@ -51,6 +51,8 @@ table {
   }
   body {
     font-family: 'Roboto', sans-serif;
+    background-color: #333333;
+    color: #ffffff;
   }
   *:focus {
     outline: none;
