@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Details from "../components/UserDetails";
 import UserList from "../components/UserList";
@@ -11,6 +12,7 @@ export default function UserDetails() {
         <Details />
         <UserList />
       </Container>
+      <Footer />
     </>
   );
 }

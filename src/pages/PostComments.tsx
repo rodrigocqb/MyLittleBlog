@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Comments from "../components/PostComments";
 import UserList from "../components/UserList";
@@ -11,6 +12,7 @@ export default function PostComments() {
         <Comments />
         <UserList />
       </Container>
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Feed from "../components/Feed";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import UserList from "../components/UserList";
 
@@ -11,6 +12,7 @@ export default function Home() {
         <Feed />
         <UserList />
       </Container>
+      <Footer />
     </>
   );
 }

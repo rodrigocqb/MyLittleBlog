@@ -28,7 +28,7 @@ export default function Comments() {
 }
 
 const Container = styled.div`
-  margin: 20px 0;
+  margin: 20px 0 90px 0;
   display: flex;
   flex-direction: column;
   width: 611px;
