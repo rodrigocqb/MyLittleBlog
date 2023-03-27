@@ -18,4 +18,8 @@ const Container = styled.header`
   justify-content: center;
   background-color: #151515;
   cursor: pointer;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 10px;
+  }
 `;
