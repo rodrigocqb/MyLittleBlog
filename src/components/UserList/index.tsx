@@ -4,7 +4,7 @@ import { getUsers } from "../../services/users/getUsers";
 import User from "./User";
 
 export default function UserList() {
-  const { data, isLoading } = useQuery("posts", getUsers);
+  const { data, isLoading } = useQuery("users", getUsers);
 
   if (isLoading) {
     return <></>;
