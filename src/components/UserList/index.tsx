@@ -12,7 +12,7 @@ export default function UserList() {
 
   return (
     <Container>
-      <Title>Lista de usuários</Title>
+      <Title>User List</Title>
       {data?.map((v) => (
         <User
           key={v.id}
@@ -33,7 +33,7 @@ const Container = styled.div`
   background-color: #171717;
   border-radius: 16px;
   position: sticky;
-  top: 20px;
+  top: 130px;
   padding: 12px 32px;
 `;
 
