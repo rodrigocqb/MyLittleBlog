@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Header() {
-  return <Container>My Little Blog</Container>;
+  const navigate = useNavigate();
+
+  return <Container onClick={() => navigate("/")}>My Little Blog</Container>;
 }
 
 const Container = styled.header`
@@ -14,4 +17,5 @@ const Container = styled.header`
   align-items: center;
   justify-content: center;
   background-color: #151515;
+  cursor: pointer;
 `;

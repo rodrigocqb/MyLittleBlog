@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import Feed from "../components/Feed";
 import Header from "../components/Header";
+import Details from "../components/UserDetails";
 import UserList from "../components/UserList";
 
-export default function Home() {
+export default function UserDetails() {
   return (
     <>
       <Header />
       <Container>
-        <Feed />
+        <Details />
         <UserList />
       </Container>
     </>

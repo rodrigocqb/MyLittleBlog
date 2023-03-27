@@ -16,6 +16,7 @@ export default function UserList() {
       {data?.map((v) => (
         <User
           key={v.id}
+          id={v.id}
           username={v.username}
         />
       ))}
