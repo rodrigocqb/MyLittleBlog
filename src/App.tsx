@@ -3,6 +3,7 @@ import { GlobalStyle } from "./styles/GlobalStyle";
 import Home from "./pages/Home";
 import { QueryClient, QueryClientProvider } from "react-query";
 import UserDetails from "./pages/UserDetails";
+import PostComments from "./pages/PostComments";
 
 function App() {
   const queryClient = new QueryClient();
@@ -19,6 +20,10 @@ function App() {
           <Route
             path="/user/:userId"
             element={<UserDetails />}
+          ></Route>
+          <Route
+            path="/post/:postId"
+            element={<PostComments />}
           ></Route>
         </Routes>
       </BrowserRouter>

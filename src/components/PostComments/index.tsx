@@ -1,10 +1,14 @@
 import { useQuery } from "react-query";
+import { useParams } from "react-router-dom";
 import styled from "styled-components";
-import { getPosts } from "../../services/posts/getPosts";
-import Post from "./Post";
+import { getPostComments } from "../../services/posts/getPostComments";
+import Comment from "./Comment";
 
-export default function Feed() {
-  const { data, isLoading } = useQuery("posts", getPosts);
+export default function Comments() {
+  const { postId } = useParams();
+  const { data, isLoading } = useQuery(["comments", postId], () =>
+    getPostComments(Number(postId)),
+  );
 
   if (isLoading) {
     return <></>;
@@ -13,10 +17,9 @@ export default function Feed() {
   return (
     <Container>
       {data?.map((v) => (
-        <Post
+        <Comment
           key={v.id}
-          id={v.id}
-          title={v.title}
+          name={v.name}
           body={v.body}
         />
       ))}
