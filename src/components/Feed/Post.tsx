@@ -22,7 +22,7 @@ export default function Post({ id, title, body }: PostParams) {
 }
 
 const Container = styled.div`
-  width: 611px;
+  width: 100%;
   background-color: #171717;
   border-radius: 16px;
   padding: 20px;
@@ -36,5 +36,9 @@ const Container = styled.div`
 
   p {
     color: #b7b7b7;
+  }
+
+  @media (max-width: 1000px) {
+    border-radius: 0;
   }
 `;

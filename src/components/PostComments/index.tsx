@@ -33,4 +33,7 @@ const Container = styled.div`
   flex-direction: column;
   width: 611px;
   row-gap: 16px;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 `;

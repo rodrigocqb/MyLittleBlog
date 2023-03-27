@@ -36,6 +36,10 @@ const Container = styled.div`
   position: sticky;
   top: 130px;
   padding: 12px 32px;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const Title = styled.h1`

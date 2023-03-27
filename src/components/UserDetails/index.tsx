@@ -63,4 +63,9 @@ const Container = styled.div`
     margin-top: 20px;
     font-size: 22px;
   }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    border-radius: 0;
+  }
 `;
